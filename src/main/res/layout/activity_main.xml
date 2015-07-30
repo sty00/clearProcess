@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="任务管理器"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="#BDBDBD"
+        android:layout_alignParentTop="true"
+        />
+    <Button
+        android:id="@+id/btn_main_clear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="一键清理"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#23BB67"
+        android:layout_below="@+id/tv_main_title"
+        />
+
+    <ListView
+        android:id="@+id/lv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_main_clear"
+        />
+
+
+</RelativeLayout>
